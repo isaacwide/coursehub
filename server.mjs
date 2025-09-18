@@ -5,16 +5,21 @@ import cors from "cors";
 import bodyParser from "body-parser";
 import fetch from "node-fetch";
 import dotenv from "dotenv";
-import { dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { dirname } from "path";
+import path from "path";
 
 dotenv.config();
 
 const app = express();
 
 // Servir archivos estáticos desde la carpeta actual
-const __dirname = dirname(fileURLToPath(import.meta.url));
-app.use(express.static(__dirname));
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+// Servir archivos estáticos desde /public
+app.use(express.static(path.join(__dirname, "public")));
+
 
 app.use(cors());
 app.use(bodyParser.json());

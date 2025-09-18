@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coursehub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+   
+</head>
+<body>
+    <!-- Skip to content link for screen readers -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <header id="header">
+        <div class="container header-container">
+            <a href="#" class="logo"><i class="fas fa-graduation-cap"></i> <span class="logo-text">Coursehub</span></a>
+            <nav id="nav">
+                <ul>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn"><span class="nav-text">Cursos</span> <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="cursos.html">Todos los cursos</a>
+                            <a href="#curso2">Ciencias Exactas</a>
+                            <a href="#curso3">Ciencias Fisicas y Matematicas</a>
+                            <a href="#curso3">Ciencias biologicas y de la salud</a>
+                            <a href="#curso3">Ciencias sociales</a>
+                            <a href="#curso3">Humanidades y Artes</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn"><span class="nav-text">Nosotros</span> <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#about">Quiénes somos</a>
+                            <a href="#vision">Misión/Visión</a>
+                            <a href="#contact">Contactanos</a>
+                        </div>
+                    </li>
+                    <li class="language-selector">
+                        <i class="fas fa-globe"></i>
+                        <select id="languageSelector">
+                            <option value="es">ES</option>
+                            <option value="en">EN</option>
+                        </select>
+                    </li>
+                    <li>
+                        <a href="#" id="loginBtn" title="Iniciar sesión">
+                            <i class="fas fa-user-circle" style="font-size: 1.8rem;"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Accessibility controls -->
+    <div class="accessibility-controls">
+        <button class="accessibility-btn" id="readPageBtn" title="Leer página en voz alta">
+            <i class="fas fa-volume-up"></i>
+        </button>
+        <button class="accessibility-btn" id="stopReadingBtn" title="Detener lectura" style="display: none;">
+            <i class="fas fa-stop"></i>
+        </button>
+    </div>
+
+    <main id="main-content">
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1 class="hero-title">Coursehub</h1>
+                <p class="hero-subtitle">Pensando en tu futuro</p>
+                <div class="btn-group">
+                    <center> <a href="http://localhost:3000/chat.html" class="btn">Presentar Examen</a> </center>
+                </div>
+            </div>
+        </section>
+
+        <section class="slider-section" id="solutions">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Nuestros cursos</h2>
+                </div>
+                <div class="slider-container">
+                    <div class="slider" id="slider">
+                        <div class="slide">
+                            <img src="https://www.gaceta.udg.mx/wp-content/uploads/2022/09/Captura-de-Pantalla-2022-09-26-a-las-9.58.54-1024x672.png" alt="Estudiantes en un aula de matemáticas">
+                            <div class="slide-content">
+                                <h3>Matematicas</h3>
+                                <p>Sientete comodo y a gusto en nuestros cursos matematicos</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="https://www.artemarcialonline.com/wp-content/uploads/2023/06/tecnico-superior-en-ilustracion-como-convertirse-en-un-experto-en-artes-plasticas-y-diseno-768x407.jpg" alt="Estudiante trabajando en una obra de arte">
+                            <div class="slide-content">
+                                <h3>Artes</h3>
+                                <p> Sientete libre y expresate en nuestros cursos de artes</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="https://habvaco.com.mx/wp-content/uploads/2023/07/CursosOnLine-min-1.webp" alt="Personas tomando cursos en línea">
+                            <div class="slide-content">
+                                <h3>Mas de 50 cursos gratuitos</h3>
+                                <p>Estudia y especializate en uno de nuestros mas de 50 cursos gratuitos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-nav">
+                        <button id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                        <button id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="slider-dots" id="sliderDots"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Espacio para el video -->
+        <section class="video-section" id="video">
+            <div class="section-title">
+               <h2 style="text-align: center; margin-bottom: 1rem;">
+                    Mira una de nuestras clases muestra!
+                </h2>
+            </div>
+            <div class="video-container">
+                <!-- Puedes reemplazar el src con el link de tu video -->
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/J99_mHqde8U" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="section-title">
+                    <h3 style="text-align: center;">
+                        "No tuve la oportunidad de entrar este año a la universidad pero gracias a Coursehub, no me quedo atras" - Anonimo
+                    </h3>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-img">
+                            <img src="https://www.anmys.com/n01/2017-08-21-01.jpg" alt="Estudiantes graduándose">
+                        </div>
+                        <div class="feature-content">
+                            <div class="feature-icon">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                            <h3>Nuevos usuario </h3>
+                            <p>Mas de 30 usuarios nuevos cada dia</p>
+                            <p>Cada dia llegamos a mas gente y les ayudamos a cumplir sus metas con nuestros cursos gratuitos.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-img">
+                            <img src="https://assets.entrepreneur.com/content/3x2/2000/1673382804-GettyImages-1384110533.jpg" alt="Persona estudiando en línea">
+                        </div>
+                        <div class="feature-content">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Mas oportunidades</h3>
+                            <p>Estudia mas y mejora todas tus oportunidades</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRys3UYkvgJpzWHeIpJOeEMa-8N9Qx12XzovQ&s" alt="Manos sosteniendo un corazón">
+                        </div>
+                        <div class="feature-content">
+                            <div class="feature-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h3>Apoyanos</h3>
+                            <p>Dale a mas gente la oportunidad de alcanzar sus metas</p>
+                            <a href="un link" class="btn">Hacer una donación</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-container">
+                    <div class="about-img">
+                     <img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/4225/production/_115333961_gettyimages-1218813156.jpg.webp" alt="Equipo de Coursehub trabajando">
+                    </div>
+                    <div class="about-content">
+                        <h2>¿Quiénes Somos?</h2>
+                        <p>Coursehub nos importa tu futuro</p>
+                        <p>Apoyamos la iniciativa de la educacion gratuita otorgando mas de 50 cursos totalmente gratuitos y con validación universitaria </p>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <div class="stat-number">50</div>
+                                <div class="stat-text">Cursos disponibles</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">100</div>
+                                <div class="stat-text">Instructores expertos</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">15</div>
+                                <div class="stat-text">Áreas de conocimiento</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="vision-mision-section" id="vision">
+            <div class="vm-container">
+                <div class="vm-image">
+                    <img src="https://cdn.forbes.com.mx/2016/09/ruben-1.jpg" alt="Visión de Coursehub" />
+                </div>
+                <div class="vm-content">
+                    <h2>Visión</h2>
+                    <p>
+                        Ser la plataforma líder en educación digital, inspirando a millones de personas a alcanzar su máximo potencial a través de experiencias de aprendizaje innovadoras, inclusivas y accesibles para todos.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="vision-mision-section" id="mision">
+            <div class="vm-container">
+                <div class="vm-image">
+                    <img src="https://p0.piqsels.com/preview/778/191/702/graduation-achievement-student.jpg" alt="Misión de Coursehub" />
+                </div>
+                <div class="vm-content">
+                    <h2>Misión</h2>
+                    <p>
+                        Democratizar el acceso a la educación de calidad, brindando herramientas, recursos y acompañamiento para que cada persona pueda aprender, crecer y transformar su vida y su entorno.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contáctanos</h2>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Dirección</h3>
+                                <p>Autop. Atlixco Puebla, Reserva Territorial Atlixcáyotl, Corredor Comercial Desarrollo Atlixcayotl, 72460 Heroica Puebla de Zaragoza, Pue.</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Teléfono</h3>
+                                <p>(+52)2225231294</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email</h3>
+                                <p>isackchazari@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Horario</h3>
+                                <p>Lunes a Sabado 9:00 am - 10:00 pm </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Nombre</label>
+                                <input type="text" id="name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Asunto</label>
+                                <input type="text" id="subject" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensaje</label>
+                                <textarea id="message" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="btn">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="chatbot-container">
+        <button class="chatbot-btn" id="chatbotBtn">
+            <i class="fas fa-robot"></i>
+        </button>
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <h3>Asistente Virtual </h3>
+                <button class="chatbot-close" id="chatbotClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="message bot-message">
+                    ¡Hola! Soy el asistente virtual de Coursehub. ¿En qué puedo ayudarte hoy?
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="userInput" placeholder="Escribe tu mensaje...">
+                <button id="sendMessage"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+ <div class="modal-overlay" id="loginModal">
+        <div class="modal-content">
+            <span class="modal-close-btn" id="closeModalBtn">&times;</span>
+            <div class="modal-header">
+                <h2>Iniciar Sesión</h2>
+            </div>
+            <form class="modal-form">
+                <div class="form-group">
+                    <label for="loginEmail">Correo Electrónico</label>
+                    <input type="email" id="loginEmail" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Contraseña</label>
+                    <input type="password" id="loginPassword" class="form-control" required>
+                </div>
+                <button type="submit" class="btn">Acceder</button>
+            </form>
+            <div class="modal-footer">
+                <p data-translate="noAccount">¿No tienes una cuenta? <a href="#" id="showRegister" data-translate="register">Regístrate</a></p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal-overlay" id="registerModal">
+        <div class="modal-content">
+            <span class="modal-close-btn" id="closeRegisterBtn">&times;</span>
+            <div class="modal-header">
+                <h2>Registro</h2>
+            </div>
+            <form class="modal-form" id="registerForm">
+                <div class="form-group">
+                    <label for="regName">Nombre completo</label>
+                    <input type="text" id="regName" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="regEmail">Correo electrónico</label>
+                    <input type="email" id="regEmail" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="regAge">Edad</label>
+                    <input type="number" id="regAge" class="form-control" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="regGender">Género</label>
+                    <select id="regGender" class="form-control" required>
+                        <option value="">Selecciona</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                        <option value="Otro">Otro</option>
+                        <option value="Prefiero no decirlo">Prefiero no decirlo</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="regState">Estado</label>
+                    <input type="text" id="regState" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="regPhone">Número de teléfono</label>
+                    <input type="tel" id="regPhone" class="form-control" required>
+                </div>
+                <div class="form-group" style="display:flex;align-items:center;gap:8px;">
+                    <input type="checkbox" id="acceptTerms" required style="width:auto;">
+                    <label for="acceptTerms" style="margin:0;">
+                        Acepto los <a href="TC.html" id="termsLink" style="color:#3498db;text-decoration:underline;" target="_blank">términos y condiciones</a>
+                    </label>
+                </div>
+                <button type="submit" class="btn">Registrarse</button>
+            </form>
+            <div style="text-align:center; margin: 1.5rem 0 0.5rem 0;">
+                <span style="color:#888;">O regístrate con</span>
+            </div>
+            <div style="display:flex; justify-content:center; gap:1rem; margin-top:1rem;">
+                <a href="#" title="Microsoft" style="font-size:1.8rem; color:#0078D4;"><i class="fab fa-microsoft"></i></a>
+                <a href="#" title="Facebook" style="font-size:1.8rem; color:#1877f3;"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" title="Google" style="font-size:1.8rem; color:#ea4335;"><i class="fab fa-google"></i></a>
+            </div>
+            <div class="modal-footer">
+                <p>¿Ya tienes cuenta? <a href="#" id="showLogin">Inicia sesión</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Coursehub</h3>
+                    <p></p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/isack.chaz.2025?locale=es_LA"><i class="fab fa-facebook-f"></i></a>
+                        <a href="aqui el link"><i class="fab fa-twitter"></i></a>
+                        <a href="aqui el link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="aqui el link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#solutions">Soluciones</a></li>
+                        <li><a href="#about">Nosotros</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Patrocinadores</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://www.elluc.com/es">Ellucian</a></li>
+                        <li><a href="https://net.com/">Netzun</a></li>
+                        <li><a href="htt">Google</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Información</h3>
+                    <p>¿Te interesa recibir ofertas o recibir noticias de nuestro programa?</p>
+                    <p>Ingresa tu correo para mantenerte informado</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu email" class="form-control">
+                        <button type="submit" class="btn">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Coursehub. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
