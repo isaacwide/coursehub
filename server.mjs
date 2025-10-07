@@ -1,5 +1,4 @@
 // server.js
-
 import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
@@ -19,7 +18,7 @@ const __dirname = dirname(__filename);
 
 // Servir archivos estáticos desde /public
 app.use(express.static(path.join(__dirname, "public")));
-
+app.use(express.static('public'));
 
 app.use(cors());
 app.use(bodyParser.json());

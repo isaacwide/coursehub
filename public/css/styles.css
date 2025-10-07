@@ -1,5 +1,6 @@
 /* Aquí irán los estilos */
-
+/* otra seccion */
+/* Overlay oscuro para mejor legibilidad */
 :root {
             --primary: #2c3e50;
             --secondary: #3498db;
@@ -115,20 +116,23 @@
 
         /* otra seccion */
         .hero {
-            height: 100vh;
-            background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), url('logo.jpg') no-repeat center center/cover;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            color: white;
-            margin-top: 70px;
-        }
+    height: 100vh;
+    background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), url('../images/logo.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-top: 70px;
+    position: relative;
+}
 
         .hero-content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
 
         .hero h1 {
             font-size: 3.5rem;
