@@ -18,7 +18,10 @@ const __dirname = dirname(__filename);
 
 // Servir archivos estáticos desde /public
 app.use(express.static(path.join(__dirname, "public")));
+<<<<<<< HEAD
 app.use(express.static('public'));
+=======
+>>>>>>> cdc7b43c71d9d55118e7cc7ee422a2113c154a92
 
 app.use(cors());
 app.use(bodyParser.json());
