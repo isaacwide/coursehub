@@ -9,7 +9,7 @@ import { dirname } from "path";
 import path from "path";
 
 dotenv.config();
-
+// hay my morena
 const app = express();
 
 // Servir archivos estáticos desde la carpeta actual
