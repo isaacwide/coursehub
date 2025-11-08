@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const materiaId = params.get('id');
 
         if (materiaId) {
-            fetch('data.json')
+            fetch('data/data.json')
                 .then(response => response.json())
                 .then(data => {
                     const materia = data.find(m => m.id === materiaId);
